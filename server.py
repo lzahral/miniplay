@@ -42,6 +42,7 @@ def receive():
         nickname = client.recv(1024)
         
         nicknames.append(nickname)
+        print(nicknames)
         clients.append(client)
         
         print(f"Nickname is {nickname}")
